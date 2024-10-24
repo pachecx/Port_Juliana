@@ -1,0 +1,149 @@
+.geral {
+  background: #9bc0a5;
+  height: 100vh;
+
+  .listaFoto {
+    padding: 2.5rem 3rem 0;
+  }
+
+  .desfoqueOn {
+    padding: 2.5rem 3rem 0;
+    filter: blur(5px);
+    transition: filter 1s ease;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    border-radius: 8px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  a:hover {
+    background: #7ba185;
+    transition: 1s;
+  }
+
+  .divTitulo {
+    padding: 10px;
+    background: white;
+    border-radius: 10rem 30px 10px 5px;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    h2 {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 500;
+      font-weight: bold;
+    }
+  }
+
+  .fundo {
+    width: 100%;
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  /* MODAL */
+
+  .Modal {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.316);
+
+    .cardModal {
+      position: relative;
+      margin: 10rem auto;
+      background: white;
+      height: 20rem;
+      width: 30rem;
+      border-radius: 1rem;
+      padding: 0.5rem;
+
+      .btnImg {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 1rem;
+        border: none;
+      }
+
+      .btnImg img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  .ModalNone {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .geral {
+    overflow: hidden;
+
+    .listaFoto {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      .divTitulo {
+        height: 100%;
+
+        h2 {
+          font-size: 3.5rem;
+        }
+      }
+    }
+
+    .divListas a {
+      font-size: 2.5rem;
+    }
+
+    .fundo {
+      display: none;
+    }
+
+    .desk {
+      display: flex;
+      background-image: url("../../assets/11-removebg-preview.png");
+      height: 40vh;
+      width: 100%;
+      background-repeat: repeat;
+    }
+
+    /* MODAL */
+
+    .Modal {
+      overflow: hidden;
+      .cardModal {
+        height: 35rem;
+        width: 55rem;
+      }
+    }
+  }
+}

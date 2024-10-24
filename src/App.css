@@ -1,0 +1,159 @@
+.pagina1 {
+  height: 100vh;
+  padding-top: 50px;
+  background: #f5f5ee;
+
+  .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+
+    h3 {
+      font-size: 2.1rem;
+      margin-bottom: 20px;
+
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+
+      font-family: "Libre Baskerville", serif;
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+
+  .navegacao ul {
+    margin: 0 auto;
+    /* width: 70%; */
+
+    li {
+      border-bottom: 3px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 70%;
+      margin: 0 auto;
+
+      a {
+        display: flex;
+        align-items: center;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 500;
+        font-style: italic;
+        text-decoration: none;
+        color: black;
+      }
+
+      .imgLinks {
+        height: 70px;
+        width: 70px;
+      }
+
+      .imgPerfil {
+        height: 80px;
+        width: 80px;
+
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+  .navegacao ul li:last-child {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .aboutDiv {
+    .about {
+      font-family: "Playfair Display SC", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .divLineMe {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .line {
+      width: 25px;
+      border: 1px solid black;
+    }
+    .me {
+      font-family: "Playball", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+
+  .fundo {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .pagina1 {
+    overflow: hidden;
+    padding-top: 2rem;
+    .titulo {
+      h3 {
+        font-size: 2.6rem;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: 3.6rem;
+      }
+    }
+
+    .navegacao ul li a {
+      font-size: 2.5rem;
+    }
+
+    .navegacao ul li {
+      width: 45%;
+    }
+
+    .navegacao ul li .imgPerfil,
+    .navegacao ul li .imgLinks {
+      height: 100px;
+      width: 100px;
+    }
+
+    .aboutDiv {
+      margin-left: 3rem;
+
+      .about {
+        font-size: 2.5rem;
+      }
+
+      .me {
+        font-size: 2.5rem;
+      }
+    }
+
+    .fundo {
+      display: none;
+    }
+
+    .desk {
+      display: flex;
+      background-image: url("../src/assets/11-removebg-preview.png");
+      height: 40vh;
+      width: 100%;
+      background-repeat: repeat;
+    }
+  }
+}

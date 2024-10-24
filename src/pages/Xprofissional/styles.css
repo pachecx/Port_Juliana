@@ -1,0 +1,137 @@
+.DivExp {
+  background: #e8e4e1;
+  height: 100vh;
+  padding-top: 2rem;
+  overflow: hidden;
+
+  .divTextExp {
+    .tituloImg {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+
+      img {
+        height: 6rem;
+        width: 6rem;
+      }
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding: 0 2rem;
+
+      p {
+        font-family: "Libre Baskerville", serif;
+      }
+    }
+    h3 {
+      font-family: "Libre Baskerville", serif;
+      font-style: italic;
+    }
+  }
+
+  .projetoEducacional {
+    margin-top: 2rem;
+    padding: 0 1rem;
+
+    h3 {
+      text-align: right;
+      margin-bottom: 1.5rem;
+      font-family: "Libre Baskerville", serif;
+      font-style: italic;
+    }
+
+    ul {
+      padding: 0 2rem;
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      a {
+        font-family: "Libre Baskerville", serif;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .livro {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 15rem;
+    width: 8rem;
+  }
+
+  .modalContainer {
+    position: absolute;
+
+    top: 10%;
+    left: 20%;
+    .modalImage {
+      height: 35rem;
+      width: 20rem;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .DivExp {
+    padding: 3rem 8rem 0;
+    .divTextExp {
+      .tituloImg {
+        margin-bottom: 3rem;
+      }
+      h3 {
+        font-size: 3rem;
+      }
+
+      ul li {
+        margin-bottom: 1rem;
+      }
+
+      ul p {
+        font-size: 2rem;
+      }
+    }
+
+    .projetoEducacional {
+      h3 {
+        font-size: 3rem;
+      }
+
+      ul {
+        padding-left: 45%;
+      }
+
+      ul li {
+        margin-bottom: 1rem;
+      }
+
+      ul a {
+        font-size: 2rem;
+      }
+    }
+
+    .livro {
+      left: 0;
+      height: 42rem;
+      width: 25rem;
+    }
+
+    .modalContainer {
+  
+      top: 5%;
+      left: 35%;
+      .modalImage {
+        height: 65rem;
+        width: 45rem;
+      }
+    }
+  }
+}
