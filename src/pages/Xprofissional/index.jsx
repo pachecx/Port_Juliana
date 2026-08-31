@@ -7,7 +7,7 @@ import imgCine from "../../assets/CRONOGRAMA.jpg";
 import imgClube from "../../assets/WhatsApp.jpeg";
 
 const Experiencia = () => {
-  const [abrirImg, setAbrirImg] = useState()
+  const [abrirImg, setAbrirImg] = useState();
 
   const handleAbrir = (Img) => {
     setAbrirImg(Img);
@@ -27,26 +27,26 @@ const Experiencia = () => {
         <ul>
           <li>
             <p>
-              <strong>Professora de ciências humanas</strong> • CE. Educabem
-              (Jan-2024)
+              <strong>Professora de Ciências Humanas</strong> • CE. Educabem
+              (jan./2024)
             </p>
           </li>
           <li>
             <p>
-              <strong> Professora de História - Realidade Brasileira</strong> •
-              Curso Letrados - Curso online.(2024)
+              <strong>Professora de História — Realidade Brasileira</strong> •
+              Curso Letrados — curso online (2024)
             </p>
           </li>
           <li>
             <p>
-              <strong>Administração em secretária escolar</strong> • CE. Padre
-              Rogério – (2023)
+              <strong>Assistente de secretaria escolar</strong> • CE. Padre
+              Rogério (2023)
             </p>
           </li>
           <li>
             <p>
-              <strong>Professora ciências humanas</strong> • CE. Padre Rogério –
-              (2021-2024).
+              <strong>Professora de Ciências Humanas</strong> • CE. Padre
+              Rogério (2021-2024)
             </p>
           </li>
           <li>
@@ -62,26 +62,29 @@ const Experiencia = () => {
         <ul>
           <li>
             <Link onClick={() => handleAbrir(imgClube)}>
-              <strong>Clube do livro</strong> - 2022• CE. Padre Rogério
-              (Organizadora e mediadora)
+              <strong>Clube do Livro</strong> — 2022 • CE. Padre Rogério
+              (organizadora e mediadora)
             </Link>
           </li>
           <li>
             <Link onClick={() => handleAbrir(imgCine)}>
-              <strong> CineClube - 2023</strong> • CE. Padre Rogério
-              (Organizadora e mediadora)
+              <strong>Cineclube</strong> — 2023 • CE. Padre Rogério
+              (organizadora e mediadora)
             </Link>
           </li>
         </ul>
       </div>
       <img src={livro} alt="" className="livro" />
 
-
-       {/* Modal */}
-       {abrirImg && (
+      {/* Modal */}
+      {abrirImg && (
         <div className="modalContainer" onClick={handleFechar}>
           <div className="modalContent">
-            <img src={abrirImg} alt="Imagem do projeto" className="modalImage" />
+            <img
+              src={abrirImg}
+              alt="Imagem do projeto"
+              className="modalImage"
+            />
           </div>
         </div>
       )}

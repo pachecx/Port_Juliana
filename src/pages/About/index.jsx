@@ -6,7 +6,7 @@ import img from "../../assets/vvvvv.png";
 import "./styles.css";
 
 import { SiGmail, SiWhatsapp, SiInstagram } from "react-icons/si";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -16,28 +16,28 @@ const About = () => {
       </div>
       <div className="text">
         <p className="textP">
-          Professora de <strong> História </strong>da Educação básica.
+          Professora de <strong>História</strong> da educação básica.
         </p>
 
         <ul>
           <li>
             <p>
               Especialista em{" "}
-              <span>História das loterias no Maranhão do século XIX</span>.
+              <span>História das loterias no Maranhão no século XIX</span>.
             </p>
           </li>
           <li>
             <p>
-              Pós-graduada em Docência e Gestão no ensino superior - Uninassau.
+              Pós-graduada em Docência e Gestão no Ensino Superior — Uninassau.
             </p>
           </li>
           <li>
-            <p>Pós-graduada em educação de jovens e adultos - Uniasselvi.</p>
+            <p>Pós-graduada em Educação de Jovens e Adultos — Uniasselvi.</p>
           </li>
           <li>
             <p>
-              Desenvolvedora de <strong>jogos educativos</strong> abordando
-              diversas temáticas.
+              Desenvolvedora de <strong>jogos educativos</strong> sobre diversas
+              temáticas.
             </p>
           </li>
         </ul>
@@ -45,14 +45,17 @@ const About = () => {
       <div className="divContatos">
         <h3>Contatos</h3>
         <div className="divContatosIcons">
-          <Link to={'mailto:julianasbarrs@gmail.com'} target="_blank">
+          <Link to={"mailto:julianasbarrs@gmail.com"} target="_blank">
             <SiGmail className="icon" />
           </Link>
 
-          <Link to={'https://api.whatsapp.com/send?phone=5598982283717'} target="_blank">
+          <Link
+            to={"https://api.whatsapp.com/send?phone=5598982283717"}
+            target="_blank"
+          >
             <SiWhatsapp className="icon" />
           </Link>
-          <Link to={'https://ig.me/m/julianasbarrs'} target="_blank">
+          <Link to={"https://ig.me/m/julianasbarrs"} target="_blank">
             <SiInstagram className="icon" />
           </Link>
         </div>
